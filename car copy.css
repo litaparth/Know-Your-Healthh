@@ -13,23 +13,17 @@
 .body{
     background-color: #faf16d;
 }
-#s6{
-    color: #1D63FF;
-  }
 .label{
     font-size: 2000px;
 }
 .bb{
-  float: right;  
-  height: 100px;
-
-}
-.space{
-    font-size:20px ;
-}
-    
-
-
+    float: right;  
+    height: 100px;
+  
+  }
+  #s6{
+    color: #1D63FF;
+  }
 #s1{
     color: #1D63FF;
 }
@@ -60,7 +54,10 @@
     width: 100px;
     font-weight: 800;
     color: white;
-    float:left;
 }
+.space{
+    font-size:20px ;
+}
+    
 
 
