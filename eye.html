@@ -29,8 +29,9 @@
 <h2 for="symptom4" hidden id="s4">4.Can you see 6 feet away? <input type="checkbox" id="symptom4"><br></h2>
 
 
-<h2 for="symptom5" hidden id="s5">Do you experience eye itching? <input type="checkbox" id="symptom5"><br></h2>
+<h2 for="symptom5" hidden id="s5">5.Do you experience eye itching? <input type="checkbox" id="symptom5"><br></h2>
 
+<h2 for="symptom6" id="s6" hidden>6.Is your Body Mass Index(BMI) more than 40kg/m²?  <input type="checkbox" id="symptom6"></h2>
 
 
 
@@ -79,12 +80,14 @@ function checkSymptoms() {
     const symptom3 = document.getElementById('symptom3').checked;
     const symptom4 = document.getElementById('symptom4').checked;
     const symptom5 = document.getElementById('symptom5').checked;
+    const symptom6 = document.getElementById('symptom6').checked;
 
     if (symptom1){ 
        result= document.getElementById("s2").hidden="";
        result= document.getElementById("s3").hidden="";
        result= document.getElementById("s4").hidden="";
        result= document.getElementById("s5").hidden="";
+       result= document.getElementById("s6").hidden="";
     }
   
     else{
@@ -96,41 +99,103 @@ function checkSymptoms() {
        
 
     }
-    if (symptom1){ result='You probably need to visit a doctor';}  
+    if (symptom1){ result='You probably need to test your Visual Refraction Eye Test  ';}   
     
-    if (symptom3) { result='You do not need to visit a doctor.';}
-    if (symptom4) { result='You do not need to visit a doctor.';}
-    if (symptom2) { result='You do not need to visit a doctor.';}
-    if (symptom1 && symptom2){ result='You need to visit a doctor.';}
-    if (symptom1 && symptom3){ result='You need to visit a doctor.';}
-    if (symptom1 && symptom4){ result='You need to visit a doctor.';}
-    if (symptom1 && symptom5){ result='You need to visit a doctor.';}
-    if (symptom2 && symptom3){ result='You need to visit a doctor.';}
-    if (symptom2 && symptom4){ result='You need to visit a doctor.';}
-    if (symptom2 && symptom5){ result='You need to visit a doctor.';}
-    if (symptom3 && symptom4){ result='You need to visit a doctor.';}
-    if (symptom3 && symptom5){ result='You need to visit a doctor.';}
-    if (symptom4 && symptom5){ result='You need to visit a doctor.';}
-    if (symptom1 && symptom2 && symptom3){result="You need to visit a doctor";}
-    if (symptom1 && symptom2 && symptom4){result="You need to visit a doctor";}
-    if (symptom1 && symptom2 && symptom5){result="You need to visit a doctor";}
-    if (symptom1 && symptom3 && symptom4){result="You need to visit a doctor";}
-    if (symptom1 && symptom3 && symptom5){result="You need to visit a doctor";}
-    if (symptom1 && symptom4 && symptom5){result="You need to visit a doctor";}
-    if (symptom2 && symptom3 && symptom4){result="You need to visit a doctor";}
-    if (symptom2 && symptom3 && symptom5){result="You need to visit a doctor";}
-    if (symptom2 && symptom4 && symptom5){result="You need to visit a doctor";}
-    if (symptom3 && symptom4 && symptom5){result="You need to visit a doctor";}
-    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You immediately need to visit a doctor.';}
-    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You immediately need to visit a doctor.';}
-    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
-    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
-    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to visit a doctor.';}
+    if (symptom3) { result='You are healthy,You are wealthy 😀💖💖';}
+    if (symptom4) { result='You are healthy,You are wealthy 😀💖💖';
+                    
+   
+}
+    if (symptom2) { result='You are healthy,You are wealthy 😀💖💖';}
+    if (symptom6) { result='You are healthy,You are wealthy 😀💖💖.';}
+
+    if (symptom1 && symptom2){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom1 && symptom3){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom1 && symptom4){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom1 && symptom5){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom1 && symptom6){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom2 && symptom3){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom2 && symptom4){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom2 && symptom5){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom2 && symptom6){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom3 && symptom4){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom3 && symptom5){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom3 && symptom6){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom4 && symptom5){ result='You need to test your Visual Refraction Eye Test .';}
+    if (symptom4 && symptom6){ result='You need to test your Visual Refraction Eye Test .';}
+   
+    if (symptom1 && symptom2 && symptom3){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom2 && symptom4){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom2 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom2 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+    if (symptom1 && symptom3 && symptom4){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom3 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom3 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+    if (symptom1 && symptom4 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom1 && symptom4 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+    if (symptom1 && symptom5 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+   
 
 
 
+    if (symptom2 && symptom3 && symptom4){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom2 && symptom3 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom2 && symptom3 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+    if (symptom2 && symptom4 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom2 && symptom4 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+    if (symptom2 && symptom5 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+   
+
+    if (symptom3 && symptom4 && symptom5){result="You need to test your Visual Refraction Eye Test ";}
+    if (symptom3 && symptom4 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+   
+   
+    if (symptom3 && symptom5 && symptom6){result="You need to test your Visual Refraction Eye Test ";}
+
+
+
+    if (symptom1 && symptom2 && symptom3 && symptom4){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom2 && symptom3 && symptom5){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom2 && symptom4 && symptom5){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom2 && symptom3 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+   
+    if (symptom1 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom3 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom1 && symptom3 && symptom5 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+
+    if (symptom2 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom2 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom2 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom2 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom2 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom3 && symptom2 && symptom4 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
 
     
+
+
+
+    if (symptom1 && symptom4 && symptom5 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    if (symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+    
+   
+    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+ 
+    if (symptom1 && symptom2 && symptom3 && symptom4 && symptom5 && symptom6){ result = 'You immediately need to test your Visual Refraction Eye Test   .';}
+   
+
+
+
+   
+   
+     
+
    
     document.getElementById('result').textContent = result;
 }
@@ -148,4 +213,5 @@ function back(){
 
     </body>
 </html>
+      
       
