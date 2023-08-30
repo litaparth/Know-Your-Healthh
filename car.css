@@ -10,7 +10,6 @@
 .h1{
     text-align: center;
 }
-
 .body{
     background-color: #faf16d;
 }
@@ -21,6 +20,9 @@
     float: right;  
     height: 100px;
   
+  }
+  #s6{
+    color: #1D63FF;
   }
 #s1{
     color: #1D63FF;
@@ -40,9 +42,6 @@
 #s5{
     color: #1D63FF;
 }
-  #s6{
-    color: #1D63FF;
-  }
 .h1{
     color: #1D63FF;
 }
@@ -56,12 +55,11 @@
     font-weight: 800;
     color: white;
 }
-.tips{
-    font-size: 20px;
-    font-family:simplifica ;
-}
 .space{
     font-size:20px ;
 }
     
+
+
+
 
