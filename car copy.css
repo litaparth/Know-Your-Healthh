@@ -19,8 +19,18 @@
 .bb{
     float: right;  
     height: 100px;
+   
   
   }
+  .b2:hover{
+    height: 70px;
+    width: 115px;
+}
+.bb:hover{
+    height: 110px;
+}
+
+
   #s6{
     color: #1D63FF;
   }
