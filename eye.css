@@ -13,16 +13,26 @@
 .body{
     background-color: #faf16d;
 }
-  #s6{
-    color: #1D63FF;
-  }
 .label{
     font-size: 2000px;
 }
 .bb{
     float: right;  
     height: 100px;
+   
   
+  }
+  .b2:hover{
+    height: 70px;
+    width: 115px;
+}
+.bb:hover{
+    height: 110px;
+}
+
+
+  #s6{
+    color: #1D63FF;
   }
 #s1{
     color: #1D63FF;
